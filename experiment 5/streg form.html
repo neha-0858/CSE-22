@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="Mistyrose">
+    <form action="#" method="post">
+        <table align="center" width="700" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Student Registration Form</h1>
+                </td>
+            </tr>
+            
+
+            <!-- Full Name -->
+<hr>
+            <tr>
+                <td><label for="name">Student Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <!--father name-->
+            <tr>
+                <td><label for="name">Father Full Name:</label></td>
+                <td><input type="text" id="name" fname="name" required></td>
+            </tr>
+            <!--mother name-->
+            <tr>
+                <td><label for="name">Mother Full Name:</label></td>
+                <td><input type="text" id="name" mname="name" required></td>
+            </tr>
+
+
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Student Email ID:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <!-- Password (moved below email) -->
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" size="50" required></td>
+            </tr>
+            <!--date of birth-->
+            <tr>
+                <td>Date of Birth :</td>
+                <td><input type="date" name="date" size=""></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                    <input type="radio" name="gender" value="other" required> other
+                </td>
+            </tr>
+
+            <!-- Phone Number -->
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <!--course-->
+            <tr>
+               <tr><td>Choose Course :</td>
+                  
+                    <td>
+
+                      <select name="Course">
+                         <option name="">---Select course---</option>
+                        <option name="">B.tech</option>
+                        <option name="">Diploma</option>
+                        <option name="">B.pharma</option>
+                        <option name="">MBBS</option>
+                        <option name="">M.tech</option>
+                        <option name="">Bsc in mathmatics</option>
+                        <option name="">MBA</option>
+                        <option name="">B.Com</option>
+                      </select>
+                    </td>
+                </tr>  
+                 
+            </tr>
+
+            <!--ADDRESS-->
+            <tr><td>Address :</td>
+            <td><textarea name="address"></textarea></td></tr>
+
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+    <hr>
+    <h5 align="center"> &copy 2025 Student Registration Portal</h5>
+</body>
+</html>
