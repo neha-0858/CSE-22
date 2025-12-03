@@ -1,0 +1,64 @@
+/*reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navbar{
+    display:Flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 20px;
+}
+/*rem is uesd under root*/
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+/* flex property direct on  child*/
+/*--display use for hide proterties which is not needed to show in our web--*/
+.nav-links{
+    display:flex;
+    list-style:none;
+
+}
+
+.nav-links li{
+    margin:0 15px;
+}
+/*only em depend on parent and rem depend on root element */
+.nav-links a{
+    color: azure;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.actions a{
+    margin-left: 15px;
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*responsive design*/
+@media(max-width:768px){
+    .nav-links{
+        display:none;/*hide menu on similer screen */
+
+    }
+    .action{
+        font-size:0.9rem;
+    }
+}
+@media(min-width:769px) and (max-width:1024){
+    .nav-links a{
+        font-size:0.9rem;
+    }
+}
+@media(min-width:1025px){
+    .nav-links a{
+        font-size: 1rem;
+    }
+}
