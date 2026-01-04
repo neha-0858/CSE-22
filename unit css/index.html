@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .parent-em{
+        font-size:20px;
+        padding:20px;
+        background-color:aqua;
+    }
+    .child-em{
+        font-size:2em; /*2x20px=40px*/
+        margin-top:1em; /*20px*/
+        background-color: white;
+    }
+</style>
+<body>
+    <h2>Em example</h2>
+    <div class="parent-em">
+        parent font-size:20px;
+        <div class="child-em">This is a 2em text</div>
+    </div>
+    
+</body>
+</html>
